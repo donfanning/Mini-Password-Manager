@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle" tools:ignore="NewApi">@style/ColoredActionBar</item>
+        <item name="android:colorPrimaryDark" tools:ignore="NewApi">@color/brand_dark</item>
+        <item name="android:colorAccent" tools:ignore="NewApi">@color/brand</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/brand</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/ColoredActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="ColoredActionBar"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/brand</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/brand</item>
+    </style>
+
+</resources>

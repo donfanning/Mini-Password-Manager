@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#e5e5e5"
+    android:id="@+id/servicesListView" >
+    <ExpandableListView
+        android:dividerHeight="10dp"
+        android:divider="#e5e5e5"
+        android:childDivider="#fff"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="false"
+        android:groupIndicator="@null"
+        android:id="@+id/servicesList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentTop="true">
+    </ExpandableListView>
+    <RelativeLayout android:id="@+id/noRecordsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/servicesList">
+        <TextView
+            android:id="@+id/noRecords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/empty"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#cccccc"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.shamanland.fab.FloatingActionButton
+        android:id="@+id/add_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="10dp"
+        android:backgroundTint="@color/brand"
+        android:background="@color/brand"
+        android:src="@drawable/add"
+        android:theme="@style/FloatingActionButton.Light"
+        />
+</RelativeLayout>
